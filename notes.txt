@@ -1,0 +1,17 @@
+1. Read the PowerShell script content.
+2. Create an Abstract Syntax Tree (AST) from the script content.
+3. Find all function definitions in the AST.
+4. Find all function calls in the AST.
+5. Create a map to track connections between functions.
+6. For each function definition:
+   a. Find all calls to this function.
+   b. Record the caller-function relationship in the map.
+7. Generate a DOT script for Graphviz:
+   a. Start with the graph header and layout settings.
+   b. For each function, create a node.
+   c. For each connection, create an edge.
+   d. (Optional) Group functions based on modules or files.
+   e. Add additional attributes for styling.
+8. Output the DOT script to a file.
+9. (Optional) Convert the DOT script to an image using Graphviz.
+10. (Optional) Create an interactive web-based visualization.
